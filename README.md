@@ -12,6 +12,7 @@
   * child selectors(nth)
   * pseudo elements and pseudo classes
   * state of element
+ * selector specificity
 # Array methods
   reduce, map, slice, splice, pop, push, shift, unshift
 # Architecture
