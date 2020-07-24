@@ -1,3 +1,6 @@
+# How to run the project
+  npm run dev -- ./\<foldername>
+
 # Block vs Inline vs Inline-clock
 # Display flex, table ,etc
 # Positions
