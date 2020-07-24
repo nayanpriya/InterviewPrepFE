@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "http-server"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,19 @@
   "bugs": {
     "url": "https://github.com/nayanpriya/InterviewPrepFE/issues"
   },
-  "homepage": "https://github.com/nayanpriya/InterviewPrepFE#readme"
+  "homepage": "https://github.com/nayanpriya/InterviewPrepFE#readme",
+  "devDependencies": {
+    "http-server": "^0.12.3",
+    "prettier": "^2.0.5"
+  },
+  "dependencies": {
+    "lodash": "^4.17.19"
+  },
+  "prettier": {
+    "tabWidth" :4,
+    "trailingComma" : "all",
+    "useTabs" : true,
+    "semi" : true,
+    "printWidth" : 80
+  }
 }
