@@ -1,0 +1,53 @@
+body {
+    font-family: sans-serif;
+  }
+  #parent {
+    height: 400px;
+    width: 300px;
+    box-sizing: border-box;
+  }
+  #page {
+    counter-reset: heading;
+    background: url("./src/bck.png");
+    background-repeat: repeat;
+  }
+  h1::before {
+    counter-increment: heading;
+    content: counter(heading) ".";
+  }
+  h1 {
+    counter-reset: subheading;
+  }
+  
+  h2::before {
+    content: counter(heading) "." counter(subheading) ")) ";
+    counter-increment: subheading;
+  }
+  /* #child > p {
+    color: yellow;
+  } */
+  /* #child + p {
+    color: green;
+  } */
+  #child ~ p {
+    color: blue;
+  }
+  /* #child p {
+    color: orchid;
+  } */
+  #child {
+    background-color: white;
+  }
+  .parent_class #child {
+    background-color: red;
+    height: 400px;
+    width: 300px;
+  }
+  p::after {
+    content: "nayan ------nayan";
+    background-color: grey;
+  }
+  a[href^="https"] {
+    color: paleturquoise;
+  }
+  
