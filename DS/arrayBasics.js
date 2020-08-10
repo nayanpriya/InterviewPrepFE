@@ -27,6 +27,27 @@ function loopingForEach(people) {
         console.log(person)
     })
 }
+createNewArray()
+function createNewArray() {
+    var d = {}
+    console.log(Object.keys(d))
+    var fruits = ["nayan", "priya", "soma"];
+    fruits.forEach((fruit, index) => {
+        console.log(fruit)
+        console.log(index)
+        d[index] = undefined
+        console.log(d)
+    })
+    console.log(Object.keys(d))
+}
+/// object.keys
+const object1 = {
+    a: 'somestring',
+    b: 42,
+    c: false
+};
+console.log(Object.keys(object1))
+
 
 forLoop(people)
 function forLoop(people) {
