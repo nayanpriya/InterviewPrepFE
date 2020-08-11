@@ -13,6 +13,8 @@ class Animal {
         console.log(this.name, 'speaks.');
     }
 }
+
+
 class Dog extends Animal {
     constructor(name, collarColor) {
         super(name)
