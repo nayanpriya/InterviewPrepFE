@@ -22,3 +22,25 @@ var boundFunction = greeting.bind(obj);
 console.log(boundFunction)
 
 console.log(boundFunction("Newtown", "KOLKATA", "WB"))
+
+// to clone an object 
+
+var cloningObject = {
+    a: 1,
+    b: 2,
+    c: {
+        age: 30
+    }
+};
+var clonedObject = Object.assign({}, cloningObject)
+clonedObject.a = 8;
+clonedObject.c.age = 100;
+console.log(clonedObject)
+console.log(cloningObject)
+
+// only json under json does deep copying not above json like a wont be connected to clone but age will be 
+// to connect a we can do following 
+
+
+
+
