@@ -1,5 +1,6 @@
 
 // Inheritance ////
+
 class Animal {
     constructor(name) {
         this.animalType = 'animal'
