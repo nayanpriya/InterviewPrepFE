@@ -1,13 +1,14 @@
 var obj = { name: "Niladri" };
 
 var greeting = function (a, b, c) {
+
     return "welcome " + this.name + " to " + a + " " + b + " in " + c;
 };
 
 // .call()
 
-console.log(greeting(obj, "Newtown", "KOLKATA", "WB"))
-console.log(greeting.call(obj, "Newtown", "KOLKATA", "WB"))
+console.log(greeting(obj, "Newtown", "KOLKATA", "WB")) // 
+console.log(greeting.call(obj, "Newtown", "KOLKATA", "WB")) // to give context of this
 
 //.apply()
 
