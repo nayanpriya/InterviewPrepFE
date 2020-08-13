@@ -1,8 +1,8 @@
 const { forEach, slice } = require("lodash")
 
 var arrayTest = [1, 2, 10, 18]
-// console.log(Array.isArray(arrayTest))
-// console.log(arrayTest instanceof Array)
+console.log(Array.isArray(arrayTest))
+console.log(arrayTest instanceof Array)
 // console.log(arrayTest.shift())
 // console.log(arrayTest.unshift(6))
 // console.log(arrayTest.push(-6))
