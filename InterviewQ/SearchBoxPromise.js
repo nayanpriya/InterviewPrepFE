@@ -1,7 +1,7 @@
 const searchList = ["apple", "app", "ape"];
 
 function autocompleteText() {
-    getUserInput().then(searchText => {
+    (getUserInput)().then(searchText => {
         return getAutoCompleteData()
     }).then((data) => {
         return autoCompleteDataProcessing(searchText, data)
