@@ -1,6 +1,6 @@
-document.getElementById("position_div").onclick = () => {
-    positionDivs()
-};
+// document.getElementById("position_div").onclick = () => {
+//     positionDivs()
+// };
 document.getElementById("grid_div").onclick = () => {
     gridDivs()
 };
