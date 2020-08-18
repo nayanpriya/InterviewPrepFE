@@ -33,3 +33,4 @@ promisePrac().then((data) => {
 function anotherFunction(data) {
     console.log(data)
 }
+
