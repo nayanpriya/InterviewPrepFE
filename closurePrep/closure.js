@@ -32,3 +32,40 @@ function mul(a) {
 }
 console.log(mul(2)(3)(4));
 console.log(mul(2)(3)(4));
+
+
+
+/// 
+// var addTo = function (passed) {
+//     var inner = 2;
+//     return inner + passed
+// }
+
+// console.log(addTo(3))
+
+// var passed = 3
+// var addTo = function () {
+//     var inner = 2;
+//     return inner + passed
+// }
+
+// console.log(addTo())
+// console.dir(addTo)    // creating closure
+
+var addTo = function (passed) {
+    var add = function (inner) {
+        return passed + inner
+    }
+    return add
+}
+
+var addThree = new addTo(3);
+var addFour = new addTo(4);
+
+// console.dir(addThree)
+// console.dir(addFour)
+
+console.log(addThree(1)) // kept the immediate varoble inside the function whih is closure 
+console.log(addFour(1))
+
+// closure are function with preserved data , it keeps the immediate varible inside the function
