@@ -1,5 +1,9 @@
 const searchList = ["apple", "app", "ape"];
 
+const button = document.querySelector('#clicked')
+// button.addEventListener('click', () => { console.log(this) })
+button.addEventListener('click', function () { console.log(this) })
+
 function autocompleteText() {
     getUserInput((searchText) => {
         getAutoCompleteData((data) => {
