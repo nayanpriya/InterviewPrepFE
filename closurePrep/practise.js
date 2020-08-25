@@ -83,6 +83,21 @@ let myObj = {
 myObj.render()
 
 
+function bind(multiply, obj) {
+    return multiply.bind(obj)
+}
+
+function multiply(a) {
+    console.log(this.val * a.val2);
+}
+
+var obj = { val: 2 }
+function callingBind() {
+    const bindFunc = bind(multiply, obj)
+    bindFunc.call(this, { val2: 2 })
+}
+
+callingBind()
 
 
 
