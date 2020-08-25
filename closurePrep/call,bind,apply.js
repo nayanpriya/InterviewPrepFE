@@ -4,7 +4,7 @@ var car = {
 
     displayDetails: function (ownerName) {
         console.log(this.registrationNumber + " " + this.brand);
-        console.log(ownerName + ", this is your car: " + this.registrationNumber + " " + this.brandl)
+        console.log(ownerName + ", this is your car: " + this.registrationNumber + " " + this.brand)
     }
 }
 
@@ -20,3 +20,4 @@ myCarDetails()
 //if to pass param in function
 
 var myCarDetailsAgain = car.displayDetails.bind(car, 'Nayan')
+myCarDetailsAgain()

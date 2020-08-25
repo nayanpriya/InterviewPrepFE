@@ -69,3 +69,5 @@ console.log(addThree(1)) // kept the immediate varoble inside the function whih 
 console.log(addFour(1))
 
 // closure are function with preserved data , it keeps the immediate varible inside the function
+
+
