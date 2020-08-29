@@ -29,7 +29,7 @@ const legoCar = new ToyCar()
 const optimusCar = new TransfornerCar()
 console.log(toyota.print())
 console.log(legoCar.print())
-console.dir(optimusCar.print())
+// console.dir(optimusCar.print)
 console.log(optimusCar.print())
 
 ///

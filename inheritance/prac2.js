@@ -21,7 +21,8 @@ let Bat = function (legs, isvegeterian) {
 }
 console.log(Bat)
 
-Bat.prototype = Object.create(Mammal.prototype)// set a reference in Bat prototype of mammal prototype , inheriting all methods of mammal
+Bat.prototype = Object.create(Mammal.prototype)// set a reference in Bat prototype of mammal prototype , 
+//inheriting all methods of mammal
 
 Bat.prototype.constructor = Bat
 
