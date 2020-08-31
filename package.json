@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "http-server"
+    "dev": "http-server",
+    "dev-sass": "http-server ./sass-project",
+    "compile-sass": "node-sass sass-project/sass/main.scss sass-project/css/style.css"
   },
   "repository": {
     "type": "git",
@@ -19,16 +21,17 @@
   "homepage": "https://github.com/nayanpriya/InterviewPrepFE#readme",
   "devDependencies": {
     "http-server": "^0.12.3",
+    "node-sass": "^4.14.1",
     "prettier": "^2.0.5"
   },
   "dependencies": {
     "lodash": "^4.17.19"
   },
   "prettier": {
-    "tabWidth" :4,
-    "trailingComma" : "all",
-    "useTabs" : true,
-    "semi" : true,
-    "printWidth" : 80
+    "tabWidth": 4,
+    "trailingComma": "all",
+    "useTabs": true,
+    "semi": true,
+    "printWidth": 80
   }
 }
