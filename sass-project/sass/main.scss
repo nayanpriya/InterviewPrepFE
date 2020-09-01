@@ -1,15 +1,49 @@
+$color-primary : yellow;
+body {
+     background-color: $color-primary; 
+}
+
+@function add-numbers($first-number , $second-number){
+    @return $first-number + $second-number
+}
+@mixin  abc {
+    border : add-numbers(1px, 1px) solid black;
+}
+
 .button {
     background-color: #0000FF; // Blue
-    border: none;
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 1.5rem;
+    @include abc;
   }
   
   .button-secondary {
     @extend .button;
     background-color: red; // Green
   }  
+  .navbar{
+    background-color: orangered;
+    padding: 1rem;
+    ul{
+        list-style: none;
+    }
+    li{
+        text-align: center;
+    margin: 1rem;
+    }
+  }
+  .btn{
+    display: inline-block;
+    padding: 15px 32px;
+    &--red{
+        background-color: #ff0000; // Red
+    }
+    &:hover{
+        background-color: #fff; // White
+    }
+  }
+
