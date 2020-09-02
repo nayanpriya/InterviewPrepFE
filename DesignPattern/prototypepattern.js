@@ -60,7 +60,13 @@ console.log(ninja1.kick === ninja2.kick) //both the ninja1 and ninja2 instances 
 // console.log(ninja1.kick(ninja2))
 // console.log(ninja1.punch(ninja2))
 // console.log(ninja2.kick(ninja1))
-// console.log(ninja1.kick === ninja2.kick) // both the instances ninja1 and ninja2 get their copies of the punch and kick function upon instantiation. Imagine making 1000 instances, that would mean a 1000 copies of both these functions for all 1000 instances! This will easily clutter the memory.
+// console.log(ninja1.kick === ninja2.kick) 
+
+
+// both the instances ninja1 and ninja2 
+//get their copies of the punch and kick function upon instantiation. 
+//Imagine making 1000 instances, that would mean a 1000 copies of both these functions for all 1000 instances! 
+//This will easily clutter the memory.
 
 
 
