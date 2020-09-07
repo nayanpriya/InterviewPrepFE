@@ -118,3 +118,19 @@ let a = [1, 2, 5, 2, 1, 8]
 // using set -- METHOD 4
 
 console.log([...new Set(a)])
+
+
+const checkName = (firstName, lastName, callback) => {
+    //write-your-code-here
+    if (firstName === undefined)
+        return callback(new Error("No First Name Entered"));
+    if (lastName === undefined) return callback(firstName);
+    return callback(firstName + lastName);
+};
+
+function callback(arg) {
+    //write-your-code-here
+    console.log(arg);
+}
+
+checkName("John", "Doe", callback)
