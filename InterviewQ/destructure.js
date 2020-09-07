@@ -95,3 +95,14 @@ console.log(displayName(point));
 
 console.log(typeof NaN === "number")
 console.log(typeof undefined)
+
+var girl = {
+    name: 'Nayan',
+    info: { age: 20, number: 123 }
+}
+
+// const newGirl = { ...girl }
+const newGirl = JSON.parse(JSON.stringify(girl))
+console.log(newGirl)
+newGirl.info.age = 30
+console.log(newGirl.info.age, girl.info.age)
