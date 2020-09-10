@@ -90,3 +90,29 @@ console.log(startDateTotal)
 // double age , filter for 40 , sort and then sum of all
 
 const combined = ages.map(age => age * 2).filter(age => age > 40).sort((a, b) => a - b).reduce((a, b) => { return a + b }, 0)
+
+
+let b = [{
+    value: 2,
+    color: 'yellow',
+},
+{
+    value: 3,
+    color: 'red',
+},
+{
+    value: 4,
+    color: 'green',
+}];
+function findColor() {
+
+    return b.reduce((acc, ele) => {
+        if (ele.color === "red") {
+            console.log(ele)
+            return ele
+        }
+        return acc
+    }, {})
+}
+
+console.log(findColor(b))
