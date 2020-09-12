@@ -36,5 +36,30 @@ spot.type();
 spot.speak();
 spot.collar();
 
+// by making class and using without prototype ES6 for defining functions as class
+// class Cat {
+//     constructor(name) {
+//         this.name = name;
+//     }
+//     meow() {
+//         console.log("cat " + this.name + " meows")
+//     }
+// }
+
+// let Catty = new Cat("pussy")
+// Catty.meow()
+
+
+// same as above but with function  and it's prototype
+function Cat(name) {
+    this.name = name
+}
+Cat.prototype.meow = function () {
+    console.log(this.name + ' says meow')
+}
+let catty = new Cat('catty')
+catty.meow()
+
+
 
 
