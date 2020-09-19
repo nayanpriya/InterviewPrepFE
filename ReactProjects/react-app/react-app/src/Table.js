@@ -1,5 +1,5 @@
 import React from "react";
-import Button from './Button'
+import { Button } from './Buttons'
 
 export default class Table extends React.Component {
 
@@ -10,7 +10,6 @@ export default class Table extends React.Component {
 
     render() {
         const { list } = this.props
-        console.log(list)
         return (
             <div>
                 {
@@ -19,7 +18,7 @@ export default class Table extends React.Component {
                         <span>{item.author}</span>
                         <span>{item.title}</span>
                         <span>{item.points}</span>
-                        <span><Button id="dismiss_button" onClick={(e) => { this.handleDismiss(item.objectID) }}>Dismiss</Button></span>
+                        <span><Button name="Dismiss" onClick={(e) => { this.handleDismiss(item.objectID) }}></Button></span>
                     </li>)
                 }
             </div>
