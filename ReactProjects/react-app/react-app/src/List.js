@@ -15,7 +15,6 @@ export default class Listing extends React.Component {
     is_mounted = false
     constructor(props) {
         super(props)
-
         this.state = { result: null, serachedValue: DEFAULT_QUERY, page: 0, error: null }
     }
 
@@ -27,7 +26,7 @@ export default class Listing extends React.Component {
 
 
     componentWillUnmount() {
-        this._isMounted = false;
+        this.is_mounted = false;
     }
 
     // if using arrow function , no need to bind it
@@ -43,7 +42,7 @@ export default class Listing extends React.Component {
     setResult = (result) => {
         console.log(result)
         const { hits, page } = result;
-        const searchedvalue = this.state.serachedValue
+        // const searchedvalue = this.state.serachedValue
         const oldhits = page !== 0 ? this.state.result.hits : []
         const updatedHits = [...oldhits, ...hits]
         this.setState({ result: { hits: updatedHits, page } })
@@ -82,7 +81,7 @@ export default class Listing extends React.Component {
         let page = this.state.page;
         page++
         this.setState({ page: page })
-        const result = this.state.result
+        // const result = this.state.result
         // const valueArray = Object.keys(result)
         // if (valueArray.indexOf(this.state.serachedValue) > -1) {
         //     // render from result no new fetching of data if matches the key 
@@ -99,6 +98,7 @@ export default class Listing extends React.Component {
     }
 
     render() {
+        console.log(this.is_mounted)
         const { result, error } = this.state
         if (error) {
             return <p>Something went wrong.</p>;
